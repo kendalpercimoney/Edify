@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Edify",
+  "version": "1.0",
+  "description": "Your edifying homepage.",
+  "author": "Kendal Percimoney",
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  },
+  "permissions": [
+    "storage",
+    "https://percimoney.com/"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "128": "icon128.png"
+  }
+}

@@ -7,21 +7,23 @@ if (imageUrl && verse) {
     document.querySelector('.hero-image').style.backgroundImage = `url(${imageUrl})`;
     // Update the verse text
     document.querySelector('.quote-text h2').textContent = verse;
-} else {
-    // Fetch the image and verse from the endpoint
-    fetch('https://firstiimpression.com/edifyAPI.php')
-        .then(response => response.json())
-        .then(data => {
-            // Update the background image
-            document.querySelector('.hero-image').style.backgroundImage = `url(${data.imageUrl})`;
-            // Update the verse text
-            document.querySelector('.quote-text h2').textContent = data.verse;
+} 
 
-            // Store the image URL and verse text in localStorage
-            localStorage.setItem('imageUrl', data.imageUrl);
-            localStorage.setItem('verse', data.verse);
-        });
-}
+// Fetch the image and verse from the endpoint
+fetch('https://firstiimpression.com/edifyAPI.php')
+.then(response => response.json())
+.then(data => {
+    // Update the background image
+    document.querySelector('.hero-image').style.backgroundImage = `url(${data.imageUrl})`;
+    // Update the verse text
+    document.querySelector('.quote-text h2').textContent = data.verse;
+
+    // Store the image URL and verse text in localStorage
+    localStorage.setItem('imageUrl', data.imageUrl);
+    localStorage.setItem('verse', data.verse);
+});
+
+
 
 window.onload = function() {
     // Check if the user's name is already saved in local storage

@@ -10,7 +10,7 @@ if (imageUrl && verse) {
 } 
 
 // Fetch the image and verse from the endpoint
-fetch('https://firstiimpression.com/edifyAPI.php')
+fetch('https://firstiimpression.com/Edify/edifyAPI.php')
 .then(response => response.json())
 .then(data => {
     // Update the background image

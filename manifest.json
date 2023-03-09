@@ -8,8 +8,6 @@
     "newtab": "index.html"
   },
   "permissions": [
-    "storage",
-    "https://percimoney.com/"
   ],
   "icons": {
     "16": "icon16.png",

@@ -76,6 +76,13 @@ $verses = array(
     'Psalm 23:4 - I will fear no evil; For You are with me; Your rod and Your staff, they comfort me.',
     'Psalm 27:1 - The Lord is my light and my salvation; Whom shall I fear? The Lord is the strength of my life; Of whom shall I be afraid?',
     'Isaiah 41:10 - Fear not, for I am with you; Be not dismayed, for I am your God. I will strengthen you, Yes, I will help you, I will uphold you with My righteous right hand.',
+    'Romans 5:5',
+    "Hebrews 11:1 - Now faith is confidence in what we hope for and assurance about what we do not see.",
+    "Psalms 42:5 - Why, my soul, are you downcast? Why so disturbed within me? Put your hope in God, for I will yet praise him, my Saviour and my God.",
+    "1 John 4:9 - This is how God showed his love among us: He sent his one and only Son into the world that we might live through him.",
+    "Matthew 22:37 - Jesus replied: 'Love the Lord your God with all your heart and with all your soul and with all your mind.'",
+    "Romans 8:35 - Who shall seperate us from the love of Christ? Shall trouble or hardship or persecution or famine or nakedness or danger or sword?",
+    "2 Timothy 1:7 - For the Spirit of God does not make us timid, but gives us power, love and self-discipline.",
     // Add more verses here
 );
 $verse = $verses[date('z') % count($verses)]; // Use the day of the year to select a verse

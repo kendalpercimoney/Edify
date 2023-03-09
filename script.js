@@ -39,7 +39,7 @@ window.onload = function() {
 
 function askForName() {
     // Ask the user for their name
-    var userName = prompt("Hi there, thanks for downloading! I hope that this plugin is edifying. To get started, please tell me your name:");
+    var userName = prompt("Hi there, thanks for downloading! To get started, please enter your name:");
     // Save the user's name to local storage
     localStorage.setItem("userName", userName);
     // Replace "kendal" with the user's name

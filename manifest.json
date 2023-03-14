@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Edify",
-  "version": "1.0",
+  "name": "Edify - Daily Bible Verse",
+  "version": "1.0.1",
   "description": "Your edifying homepage.",
   "author": "Kendal Percimoney",
   "chrome_url_overrides" : {

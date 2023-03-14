@@ -84,6 +84,14 @@ $verses = array(
     "Romans 8:35 - Who shall seperate us from the love of Christ? Shall trouble or hardship or persecution or famine or nakedness or danger or sword?",
     "2 Timothy 1:7 - For the Spirit of God does not make us timid, but gives us power, love and self-discipline.",
     // Add more verses here
+    "Psalms 27:14 - Wait for the Lord; be strong and take heart and wait for the Lord.",
+    "Romans 12:12 - Be joyful in hope, patient in affliction, faithful in prayer.",
+    "Philippians 4:6 - Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.",
+    "Philippians 4:7 - And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus.",
+    "John 14:27 - Peace I leave with you, my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid.",
+    "1 Peter 5:7 - Cast all your anxiety on him because he cares for you.",
+    "1 John 4:19 - We love because He first loved us."
+
 );
 $verse = $verses[date('z') % count($verses)]; // Use the day of the year to select a verse
 

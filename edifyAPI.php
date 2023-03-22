@@ -78,19 +78,24 @@ $verses = array(
     'Isaiah 41:10 - Fear not, for I am with you; Be not dismayed, for I am your God. I will strengthen you, Yes, I will help you, I will uphold you with My righteous right hand.',
     'Romans 5:5',
     "Hebrews 11:1 - Now faith is confidence in what we hope for and assurance about what we do not see.",
-    "Psalms 42:5 - Why, my soul, are you downcast? Why so disturbed within me? Put your hope in God, for I will yet praise him, my Saviour and my God.",
+    "Psalm 42:5 - Why, my soul, are you downcast? Why so disturbed within me? Put your hope in God, for I will yet praise him, my Saviour and my God.",
     "1 John 4:9 - This is how God showed his love among us: He sent his one and only Son into the world that we might live through him.",
     "Matthew 22:37 - Jesus replied: 'Love the Lord your God with all your heart and with all your soul and with all your mind.'",
     "Romans 8:35 - Who shall seperate us from the love of Christ? Shall trouble or hardship or persecution or famine or nakedness or danger or sword?",
     "2 Timothy 1:7 - For the Spirit of God does not make us timid, but gives us power, love and self-discipline.",
     // Add more verses here
-    "Psalms 27:14 - Wait for the Lord; be strong and take heart and wait for the Lord.",
+    "Psalm 27:14 - Wait for the Lord; be strong and take heart and wait for the Lord.",
     "Romans 12:12 - Be joyful in hope, patient in affliction, faithful in prayer.",
     "Philippians 4:6 - Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.",
     "Philippians 4:7 - And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus.",
     "John 14:27 - Peace I leave with you, my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid.",
     "1 Peter 5:7 - Cast all your anxiety on him because he cares for you.",
-    "1 John 4:19 - We love because He first loved us."
+    "1 John 4:19 - We love because He first loved us.",
+    "Psalm 68:34 - Proclaim the power of God, whose majesty is over Israel, whose power is in the heavens.",
+    "Proverbs 3:19 - By wisdom the Lord laid the earth’s foundations, by understanding he set the heavens in place.",
+    "Proverbs 3:20 - By his knowledge the watery depths were divided, and the clouds let drop their due.",
+    "Psalm 25:21 - May integrity and uprightness protect me, because my hope, Lord, is in you.",
+    "Lamentations 3:22 - Because of the Lord's great love we are not consumed, for his compassions never fail."
 
 );
 $verse = $verses[date('z') % count($verses)]; // Use the day of the year to select a verse

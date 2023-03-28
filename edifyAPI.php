@@ -84,7 +84,7 @@ $verses = array(
     "Romans 8:35 - Who shall seperate us from the love of Christ? Shall trouble or hardship or persecution or famine or nakedness or danger or sword?",
     "2 Timothy 1:7 - For the Spirit of God does not make us timid, but gives us power, love and self-discipline.",
     // Add more verses here
-    "Psalm 27:14 - Wait for the Lord; be strong and take heart and wait for the Lord.",
+    "Psalms 27:14 - Wait for the Lord; be strong and take heart and wait for the Lord.",
     "Romans 12:12 - Be joyful in hope, patient in affliction, faithful in prayer.",
     "Philippians 4:6 - Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.",
     "Philippians 4:7 - And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus.",
@@ -92,10 +92,21 @@ $verses = array(
     "1 Peter 5:7 - Cast all your anxiety on him because he cares for you.",
     "1 John 4:19 - We love because He first loved us.",
     "Psalm 68:34 - Proclaim the power of God, whose majesty is over Israel, whose power is in the heavens.",
+    "Psalm 104:1 - Praise the Lord, my soul. Lord my God, you are very great; you are clothed with splendour and majesty.",
     "Proverbs 3:19 - By wisdom the Lord laid the earth’s foundations, by understanding he set the heavens in place.",
     "Proverbs 3:20 - By his knowledge the watery depths were divided, and the clouds let drop their due.",
     "Psalm 25:21 - May integrity and uprightness protect me, because my hope, Lord, is in you.",
-    "Lamentations 3:22 - Because of the Lord's great love we are not consumed, for his compassions never fail."
+    "Lamentations 3:22 - Because of the Lord's great love we are not consumed, for his compassions never fail.",
+    "Hebrews 10:24 - And let us consider how we may spur one another on toward love and good deeds",
+    "Psalm 46:11 - The Lord of hosts is with us; the God of Jacob is our fortress. Selah",
+    "John 8:12 - 'I am the light of the world. Whoever follows me will never walk in darkness, but will have the light of life.'",
+    "Matthew 11:28 - Come to me, all who labor and are heavy laden, and I will give you rest.",
+    "Matthew 11:29 - Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls.",
+    "Matthew 11:30 - For my yoke is easy, and my burden is light.",
+    "2 Cor. 13:11 - Finally, brothers, rejoice. Aim for restoration, comfort one another, agree with one another, live in peace; and the God of love and peace will be with you."
+
+
+
 
 );
 $verse = $verses[date('z') % count($verses)]; // Use the day of the year to select a verse

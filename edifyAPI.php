@@ -104,6 +104,29 @@ $verses = array(
     "Matthew 11:29 - Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls.",
     "Matthew 11:30 - For my yoke is easy, and my burden is light.",
     "2 Cor. 13:11 - Finally, brothers, rejoice. Aim for restoration, comfort one another, agree with one another, live in peace; and the God of love and peace will be with you."
+    "Hope you have a blessed easter week!",
+    "Hope you have a blessed easter week!",
+    "Hope you have a blessed easter week!",
+    "Hope you have a blessed easter week!",
+    "Hope you have a blessed easter week!",
+    "Hope you have a blessed easter week!",
+    "Hope you have a blessed easter week!",
+    "Hope you have a blessed easter week!",
+    "Hope you have a blessed easter week!",
+    "Proverbs 2:6 - For the Lord gives wisdom; from his mouth come knowledge and understanding.",
+    "Proverbs 9:10 - The fear of the Lord is the beginning of wisdom, and knowledge of the Holy One is understanding.",
+    "Proverbs 4:7 - The beginning of wisdom is this: Get wisdom. Though it cost all you have, get understanding.",
+    "James 1:5 - If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you.",
+    "Proverbs 16:21 - The wise in heart are called discerning, and gracious words promote instruction.",
+    "Proverbs 3:5 - Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight.",
+    "Proverbs 16:16 - How much better to get wisdom than gold, to get insight rather than silver!",
+    "Romans 10:17 - Consequently, faith comes from hearing the message, and the message is heard through the word about Christ.",
+    "Hebrews 11:1 - Now faith is confidence in what we hope for and assurance about what we do not see.",
+    "Ephesians 2:8-9 - For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God— not by works, so that no one can boast.",
+    "James 1:6 - But when you ask, you must believe and not doubt, because the one who doubts is like a wave of the sea, blown and tossed by the wind.",
+    "Romans 1:17 - For in the gospel the righteousness of God is revealed—a righteousness that is by faith from first to last, just as it is written: 'The righteous will live by faith.'",
+    "Galatians 3:26 - So in Christ Jesus you are all children of God through faith.",
+    "2 Corinthians 5:7 - Therefore we are always confident and know that as long as we are at home in the body we are away from the Lord. For we live by faith, not by sight."
 
 
 

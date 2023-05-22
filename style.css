@@ -32,13 +32,16 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-
+  color: rgb(233, 233, 233);
   margin: 0px;
-  background-color: #000000;
-  border: 30px solid black;
-  opacity: 0.6;
-  border-radius:25px; 
+  background-color: rgba(0, 0, 0, 0.6); /* Keep the black block at 0.6 opacity */
+  border: 30px solid rgba(0, 0, 0, 0); /* Set the border color to fully opaque black */
+  border-radius: 25px;
+}
+
+.hero-text h1,
+.hero-text h2 {
+  opacity: 1; /* Make the text fully opaque */
 }
 
 

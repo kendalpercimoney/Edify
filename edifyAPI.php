@@ -10,6 +10,89 @@ $imageUrl = 'https://firstiimpression.com/Edify/images/' . $imageNumber . '.jpg'
 
 // Generate the verse for the day
 $verses = array(
+    "1 Cor 16:14 - Let all that you do be done in love.",
+    "Romans 15:13 - May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope.",
+    "Philippians 4:4 - Rejoice in the Lord always. I will say it again: Rejoice!",
+    "James 1:2 - Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds, because you know that the testing of your faith produces perseverance."
+    "James 1:4 - Let perseverance finish its work so that you may be mature and complete, not lacking anything."
+    "John 16:33 - I have said these things to you, that in me you may have peace. In the world you will have tribulation. But take heart; I have overcome the world.",
+    "Isaiah 26:3 - You keep him in perfect peace whose mind is stayed on you, because he trusts in you.",
+    "Psalms 4:8 - In peace I will lie down and sleep, for you alone, LORD, make me dwell in safety.",
+    "John 14:27 - Peace I leave with you; my peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid.",
+    "Romans 12:18 - If possible, so far as it depends on you, live peaceably with all.",
+    "Colossians 3:15 - And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful.",
+    "Ecclesiastes 7:9 - Do not be quickly provoked in your spirit, for anger resides in the lap of fools.",
+    "Romans 12:12 - Be joyful in hope, patient in affliction, faithful in prayer.",
+    "Proverbs 15:18 - A hot-tempered person stirs up conflict, but the one who is patient calms a quarrel.",
+    "Philippians 4:6 Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.",
+    "Ephesians 4:2 - Be completely humble and gentle; be patient, bearing with one another in love.",
+    "Ephesians 4:32 - Be kind and compassionate to one another, forgiving each other, just as in Christ God forgave you.",
+    "Micah 6:8 - He has shown you, O mortal, what is good. And what does the LORD require of you? To act justly and to love mercy and to walk humbly with your God.",
+    "Proverbs 15:1 - A gentle answer turns away wrath, but a harsh word stirs up anger.",
+    "Philippians 4:5 - Let your gentleness be evident to all. The Lord is near.",
+    "Hebrews 10:23 - Let us hold unswervingly to the hope we profess, for he who promised is faithful.",
+    "1 Corinthians 1:9 - God is faithful, who has called you into fellowship with his Son, Jesus Christ our Lord.",
+    "1 Corinthians 10:13a - No temptation has overtaken you except what is common to mankind. And God is faithful; he will not let you be tempted beyond what you can bear.",
+    "1 Corinthians 10:13b - But when you are tempted, he will also provide a way out so that you can endure it.",
+    "Proverbs 25:28 - Like a city whose walls are broken through is a person who lacks self-control.",
+    "Proverbs 18:21 - The tongue has the power of life and death, and those who love it will eat its fruit.",
+    "1 Thess. 5:8 - But since we belong to the day, let us be sober, putting on faith and love as a breastplate, and the hope of salvation as a helmet.",
+    "1 Corinthians 9:25 - Everyone who competes in the games goes into strict training. They do it to get a crown that will not last, but we do it to get a crown that will last forever.",
+    "Romans 12:1 - Therefore, I urge you, brothers and sisters, in view of God’s mercy, to offer your bodies as a living sacrifice, holy and pleasing to God—this is your true and proper worship.",
+    "Romans 12:2 - Do not conform to the pattern of this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what God’s will is - his good, pleasing and perfect will.",
+    "Psalm 23:1 The Lord is my shepherd, I shall lack nothing.",
+    "Psalm 23:2 He makes me lie down in green pastures, he leads me beside quiet waters",
+    "Psalm 23:3 he restores my soul. He guides me in paths of righteousness for his name’s sake.",
+    "Psalm 23:4 Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me; your rod and your staff, they comfort me.",
+    "Psalm 23:5 You anoint my head with oil; my cup overflows.",
+    "Psalm 23:5 You prepare a table before me in the presence of my enemies.",
+    "Psalm 23:6 Surely goodness and love will follow me all the days of my life, and I will dwell in the house of the LORD forever.",
+    "Psalm 32:8 I will instruct you and teach you in the way you should go.",
+    "Psalm 31:23 The Lord preserves the faithful.",
+    "Psalm 37:28 For the Lord loves the just and will not forsake his faithful one. They will be protected forever.",
+    "Psalm 4:8 I will lie down and sleep in peace, for you alone, O Lord, make me dwell in safety.",
+    "Psalm 55:22 Cast your cares on the Lord and he will sustain you.",
+    "Psalm 86:5 You are kind and forgiving, O Lord, abounding in love to all who call to you.",
+    "Psalm 68:19 Praise be to the Lord, to God our Savior, who daily bears our burdens.",
+    "Psalm 28:7 The Lord is my strength and my shield; my heart trusts in him.",
+    "Isaiah 12:2 - Surely God is my salvation; I will trust, and not be afraid. The Lord, The Lord, is my strength and my song; he has become my salvation.",
+    "Isaiah 25:8 - The Sovereign Lord will wipe away the tears from all faces.",
+    "Isaiah 26:19 - But your dead will live; their bodies will rise. You who dwell in the dust, wake up and shout for joy.",
+    "Isaiah 26:3 - You will keep in perfect peace him whose mind is steadfast, because he trusts in you.",
+    "Isaiah 30:15 - In repentance and rest is your salvation, in quietness and trust is your strength.",
+    "Isaiah 30:21 - Whether you turn to the right or to the left, your ears will hear a voice behind you, saying, 'This is the way; walk in it.'",
+    "Isaiah 33:22 - For the Lord is our judge; the Lord is our lawgiver; the Lord is our king, it is he who will save us.",
+    "Isaiah 33:6 - He will be the sure foundation for your times, a rich store of salvation and wisdom and knowledge.",
+    "Isaiah 35:10 - Gladness and joy will overtake them, and sorrow and sighing will flee away.",
+    "Isaiah 35:4 - Say to those with fearful hearts, 'Be strong, do not fear, your God will come.'",
+    "Isaiah 38:20 - The LORD will save me, and we will sing with stringed instruments",
+    "Isaiah 40:11 - He tends his flock like a shepherd: He gathers the lambs in his arms and carries them close to his heart; he gently leads those that have young."
+    "Isaiah 40:28 - The Lord is the everlasting God, the Creator of the ends of the earth. He will not grow tired or weary, and his understanding no one can fathom. He gives strength to the weary and increases the power of the weak.",
+    "Isaiah 40:29 - I will bind up the injured and strengthen the weak.",
+    "Isaiah 40:31 - Those who hope in the Lord will renew their strength.",
+    "Isaiah 41:10 - I will strengthen you and help you; I will uphold you with my righteous right hand.",
+    "Isaiah 41:10 - So do not fear, for I am with you; do not be dismayed, for I am your God.",
+    "Isaiah 41:13 - I am the Lord, your God, who takes hold of your right hand and says to you, Do not fear; I will help you.",
+    "Isaiah 42:16 - I will turn the darkness into light.",
+    "Isaiah 43:1 - Fear not, for I have redeemed you; I have called you by name; you are mine.",
+    "Isaiah 43:2 - When you pass through the waters, I will be with you.",
+    "Isaiah 43:25 - I, even I, am he who blots out your transgressions, for my own sake, and remembers your sins no more.",
+    "Isaiah 44:22 - I have swept away your offenses like a cloud, your sins like the morning mist. Return to me, for I have redeemed you.",
+    "Isaiah 45:2 - I will go before you and will level the mountains",
+    "Isaiah 49:15 - I will not forget you.",
+    "Isaiah 49:25 - I will contend with those who contend with you, and your children I will save.",
+    "Isaiah 50:7 - Because the Sovereign LORD helps me, I will not be disgraced. Therefore have I set my face like flint, and I know I will not be put to shame.",
+    "Isaiah 51:11 - Everlasting joy will crown their heads. Gladness and joy will overtake them, and sorrow and sighing will flee away.",
+    "Isaiah 51:12 - I, even I, am he who comforts you.",
+    "Isaiah 51:6 - My salvation will last forever.",
+    "Isaiah 54:10 - My unfailing love for you will not be shaken nor my covenant of peace be removed.",
+    "Isaiah 54:14 - In righteousness you will be established: Tyranny will be far from you; you will have nothing to fear. Terror will be far removed; it will not come near you.",
+    "Isaiah 54:17 - No weapon forged against you will prevail, and you will refute every tongue that accuses you. This is the heritage of the servants of the LORD, and this is their vindication from me,” declares the LORD.",
+    "Isaiah 54:8 - With everlasting kindness I will have compassion on you.",
+    "Isaiah 55:7 - Let the wicked forsake his way and the evil man his thoughts. Let him turn to the LORD, and he will have mercy on him, and to our God, for he will freely pardon.",
+    "Isaiah 57:15 - I, the Lord, live in a high and holy place, but also with him who is contrite and lowly in spirit, to revive the spirit of the lowly and revive the heart of the contrite.",
+    "Isaiah 57:18 - I have seen his ways, but I will heal him; I will guide him and restore comfort to him.",
+    "Isaiah 57:2 - Those who walk uprightly enter into peace; they find rest as they lie in death",
     "Romans 15:13 - May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope.",
     "Isaiah 40:28a - Do you not know? Have you not heard? The Lord is the everlasting God, the Creator of the ends of the earth.",
     "Isaiah 40:28b – He will not grow tired or weary, and his understanding no one can fathom.",
@@ -62,7 +145,6 @@ $verses = array(
     "Romans 1:17 - For in the gospel the righteousness of God is revealed—a righteousness that is by faith from first to last, just as it is written: 'The righteous will live by faith.'",
     "Galatians 3:26 - So in Christ Jesus you are all children of God through faith.",
     "2 Corinthians 5:7 - Therefore we are always confident and know that as long as we are at home in the body we are away from the Lord. For we live by faith, not by sight.",
-//
     "Deuteronomy 31:8 - The Lord himself goes before you and will be with you; he will never leave you nor forsake you. Do not be afraid; do not be discouraged.",
     "Psalm 28:7a - The Lord is my strength and my shield; my heart trusts in him, and he helps me.",
     "Psalm 28:7b - My heart leaps for joy, and with my song I praise him.",
@@ -94,19 +176,13 @@ $verses = array(
     "Mark 11:24 - And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses.",
     "Matthew 10:30 - And even the very hairs of your head are all numbered. So don’t be afraid; you are worth more than many sparrows.",
     "2 Cor 12:8 - Three times I pleaded with the Lord about this, that it should leave me. But he said to me, “My grace is sufficient for you, for my power is made perfect in weakness.",
-    ""
-
-
-
-
-
-
-
-
-
-
-
-
+    "Galatians 5:22 - But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness, gentleness and self-control. Against such things there is no law.",
+    "1 Cor 13:4 - Love is patient, love is kind. It does not envy, it does not boast, it is not proud.",
+    "1 Cor 13:5 - Love does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs.",
+    "1 Cor 13:6 - Love does not delight in evil but rejoices with the truth.",
+    "1 Cor 13:7 - Love always protects, always trusts, always hopes, always perseveres.",
+    "1 Cor 13:13 - So now faith, hope, and love abide, these three; but the greatest of these is love."
+    
 );
 $verse = $verses[date('z') % count($verses)]; // Use the day of the year to select a verse
 

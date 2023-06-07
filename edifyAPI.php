@@ -10,11 +10,13 @@ $imageUrl = 'https://firstiimpression.com/Edify/images/' . $imageNumber . '.jpg'
 
 // Generate the verse for the day
 $verses = array(
+    "1 Cor 13:7 - Love always protects, always trusts, always hopes, always perseveres.",
+    "1 Cor 13:13 - So now faith, hope, and love abide, these three; but the greatest of these is love.",
     "1 Cor 16:14 - Let all that you do be done in love.",
     "Romans 15:13 - May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope.",
     "Philippians 4:4 - Rejoice in the Lord always. I will say it again: Rejoice!",
-    "James 1:2 - Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds, because you know that the testing of your faith produces perseverance."
-    "James 1:4 - Let perseverance finish its work so that you may be mature and complete, not lacking anything."
+    "James 1:2 - Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds, because you know that the testing of your faith produces perseverance.",
+    "James 1:4 - Let perseverance finish its work so that you may be mature and complete, not lacking anything.",
     "John 16:33 - I have said these things to you, that in me you may have peace. In the world you will have tribulation. But take heart; I have overcome the world.",
     "Isaiah 26:3 - You keep him in perfect peace whose mind is stayed on you, because he trusts in you.",
     "Psalms 4:8 - In peace I will lie down and sleep, for you alone, LORD, make me dwell in safety.",
@@ -38,11 +40,11 @@ $verses = array(
     "Proverbs 18:21 - The tongue has the power of life and death, and those who love it will eat its fruit.",
     "1 Thess. 5:8 - But since we belong to the day, let us be sober, putting on faith and love as a breastplate, and the hope of salvation as a helmet.",
     "1 Corinthians 9:25 - Everyone who competes in the games goes into strict training. They do it to get a crown that will not last, but we do it to get a crown that will last forever.",
-    "Romans 12:1 - Therefore, I urge you, brothers and sisters, in view of God’s mercy, to offer your bodies as a living sacrifice, holy and pleasing to God—this is your true and proper worship.",
-    "Romans 12:2 - Do not conform to the pattern of this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what God’s will is - his good, pleasing and perfect will.",
+    "Romans 12:1 - Therefore, I urge you, brothers and sisters, in view of God's mercy, to offer your bodies as a living sacrifice, holy and pleasing to God—this is your true and proper worship.",
+    "Romans 12:2 - Do not conform to the pattern of this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what God's will is - his good, pleasing and perfect will.",
     "Psalm 23:1 The Lord is my shepherd, I shall lack nothing.",
     "Psalm 23:2 He makes me lie down in green pastures, he leads me beside quiet waters",
-    "Psalm 23:3 he restores my soul. He guides me in paths of righteousness for his name’s sake.",
+    "Psalm 23:3 he restores my soul. He guides me in paths of righteousness for his name's sake.",
     "Psalm 23:4 Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me; your rod and your staff, they comfort me.",
     "Psalm 23:5 You anoint my head with oil; my cup overflows.",
     "Psalm 23:5 You prepare a table before me in the presence of my enemies.",
@@ -66,9 +68,7 @@ $verses = array(
     "Isaiah 35:10 - Gladness and joy will overtake them, and sorrow and sighing will flee away.",
     "Isaiah 35:4 - Say to those with fearful hearts, 'Be strong, do not fear, your God will come.'",
     "Isaiah 38:20 - The LORD will save me, and we will sing with stringed instruments",
-    "Isaiah 40:11 - He tends his flock like a shepherd: He gathers the lambs in his arms and carries them close to his heart; he gently leads those that have young."
-    "Isaiah 40:28 - The Lord is the everlasting God, the Creator of the ends of the earth. He will not grow tired or weary, and his understanding no one can fathom. He gives strength to the weary and increases the power of the weak.",
-    "Isaiah 40:29 - I will bind up the injured and strengthen the weak.",
+    "Isaiah 40:11 - He tends his flock like a shepherd: He gathers the lambs in his arms and carries them close to his heart; he gently leads those that have young.",
     "Isaiah 40:31 - Those who hope in the Lord will renew their strength.",
     "Isaiah 41:10 - I will strengthen you and help you; I will uphold you with my righteous right hand.",
     "Isaiah 41:10 - So do not fear, for I am with you; do not be dismayed, for I am your God.",
@@ -95,10 +95,10 @@ $verses = array(
     "Isaiah 57:2 - Those who walk uprightly enter into peace; they find rest as they lie in death",
     "Romans 15:13 - May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope.",
     "Isaiah 40:28a - Do you not know? Have you not heard? The Lord is the everlasting God, the Creator of the ends of the earth.",
-    "Isaiah 40:28b – He will not grow tired or weary, and his understanding no one can fathom.",
+    "Isaiah 40:28b - He will not grow tired or weary, and his understanding no one can fathom.",
     "Romans 8:24 - For in this hope we were saved. But hope that is seen is no hope at all. Who hopes for what he already has?",
     "Romans 8:25 But if we hope for what we do not yet have, we wait for it patiently.",
-    "Isaiah 40:31 - but those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint.",
+    "Isaiah 40:31 - But those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint.",
     "Romans 15:4 - For everything that was written in the past was written to teach us, so that through endurance and the encouragement of the Scriptures we might have hope.",
     "Psalm 23:4 - I will fear no evil; For You are with me; Your rod and Your staff, they comfort me.",
     "Psalm 27:1 - The Lord is my light and my salvation; Whom shall I fear? The Lord is the strength of my life; Of whom shall I be afraid?",
@@ -119,7 +119,7 @@ $verses = array(
     "1 John 4:19 - We love because He first loved us.",
     "Psalm 68:34 - Proclaim the power of God, whose majesty is over Israel, whose power is in the heavens.",
     "Psalm 104:1 - Praise the Lord, my soul. Lord my God, you are very great; you are clothed with splendour and majesty.",
-    "Proverbs 3:19 - By wisdom the Lord laid the earth’s foundations, by understanding he set the heavens in place.",
+    "Proverbs 3:19 - By wisdom the Lord laid the earth's foundations, by understanding he set the heavens in place.",
     "Proverbs 3:20 - By his knowledge the watery depths were divided, and the clouds let drop their due.",
     "Psalm 25:21 - May integrity and uprightness protect me, because my hope, Lord, is in you.",
     "Lamentations 3:22 - Because of the Lord's great love we are not consumed, for his compassions never fail.",
@@ -174,14 +174,12 @@ $verses = array(
     "Luke 12:8 - Whoever acknowledges me before men, the Son of man will also acknowledge before the angels of God.",
     "Mark 11:24 - Therefore I tell you, whatever you ask in prayer, believe that you have received it, and it will be yours.",
     "Mark 11:24 - And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses.",
-    "Matthew 10:30 - And even the very hairs of your head are all numbered. So don’t be afraid; you are worth more than many sparrows.",
+    "Matthew 10:30 - And even the very hairs of your head are all numbered. So don't be afraid; you are worth more than many sparrows.",
     "2 Cor 12:8 - Three times I pleaded with the Lord about this, that it should leave me. But he said to me, “My grace is sufficient for you, for my power is made perfect in weakness.",
     "Galatians 5:22 - But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness, gentleness and self-control. Against such things there is no law.",
     "1 Cor 13:4 - Love is patient, love is kind. It does not envy, it does not boast, it is not proud.",
     "1 Cor 13:5 - Love does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs.",
-    "1 Cor 13:6 - Love does not delight in evil but rejoices with the truth.",
-    "1 Cor 13:7 - Love always protects, always trusts, always hopes, always perseveres.",
-    "1 Cor 13:13 - So now faith, hope, and love abide, these three; but the greatest of these is love."
+    "1 Cor 13:6 - Love does not delight in evil but rejoices with the truth."
     
 );
 $verse = $verses[date('z') % count($verses)]; // Use the day of the year to select a verse

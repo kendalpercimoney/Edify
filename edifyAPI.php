@@ -10,10 +10,7 @@ $imageUrl = 'https://firstiimpression.com/Edify/images/' . $imageNumber . '.jpg'
 
 // Generate the verse for the day
 $verses = array(
-    "1 Cor 13:7 - Love always protects, always trusts, always hopes, always perseveres.",
-    "1 Cor 13:13 - So now faith, hope, and love abide, these three; but the greatest of these is love.",
-    "1 Cor 16:14 - Let all that you do be done in love.",
-    "Romans 15:13 - May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope.",
+    
     "Philippians 4:4 - Rejoice in the Lord always. I will say it again: Rejoice!",
     "James 1:2 - Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds, because you know that the testing of your faith produces perseverance.",
     "James 1:4 - Let perseverance finish its work so that you may be mature and complete, not lacking anything.",
@@ -179,7 +176,11 @@ $verses = array(
     "Galatians 5:22 - But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness, gentleness and self-control. Against such things there is no law.",
     "1 Cor 13:4 - Love is patient, love is kind. It does not envy, it does not boast, it is not proud.",
     "1 Cor 13:5 - Love does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs.",
-    "1 Cor 13:6 - Love does not delight in evil but rejoices with the truth."
+    "1 Cor 13:6 - Love does not delight in evil but rejoices with the truth.",
+    "1 Cor 13:7 - Love always protects, always trusts, always hopes, always perseveres.",
+    "1 Cor 13:13 - So now faith, hope, and love abide, these three; but the greatest of these is love.",
+    "1 Cor 16:14 - Let all that you do be done in love.",
+    "Romans 15:13 - May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope."
     
 );
 $verse = $verses[date('z') % count($verses)]; // Use the day of the year to select a verse

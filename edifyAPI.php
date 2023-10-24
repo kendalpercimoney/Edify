@@ -11,7 +11,6 @@ $imageUrl = 'https://firstiimpression.com/Edify/images/' . $imageNumber . '.jpg'
 // Generate the verse for the day
 $verses = array(
     
-    "Philippians 4:4 - Rejoice in the Lord always. I will say it again: Rejoice!",
     "James 1:2 - Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds, because you know that the testing of your faith produces perseverance.",
     "James 1:4 - Let perseverance finish its work so that you may be mature and complete, not lacking anything.",
     "John 16:33 - I have said these things to you, that in me you may have peace. In the world you will have tribulation. But take heart; I have overcome the world.",
@@ -138,6 +137,7 @@ $verses = array(
     "Romans 10:17 - Consequently, faith comes from hearing the message, and the message is heard through the word about Christ.",
     "Hebrews 11:1 - Now faith is confidence in what we hope for and assurance about what we do not see.",
     "Ephesians 2:8-9 - For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God— not by works, so that no one can boast.",
+    "1 Corinthians 16:13 - Be on your guard; stand firm in the faith; be courageous; be strong.",
     "James 1:6 - But when you ask, you must believe and not doubt, because the one who doubts is like a wave of the sea, blown and tossed by the wind.",
     "Romans 1:17 - For in the gospel the righteousness of God is revealed—a righteousness that is by faith from first to last, just as it is written: 'The righteous will live by faith.'",
     "Galatians 3:26 - So in Christ Jesus you are all children of God through faith.",
@@ -180,7 +180,9 @@ $verses = array(
     "1 Cor 13:7 - Love always protects, always trusts, always hopes, always perseveres.",
     "1 Cor 13:13 - So now faith, hope, and love abide, these three; but the greatest of these is love.",
     "1 Cor 16:14 - Let all that you do be done in love.",
-    "Romans 15:13 - May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope."
+    "Romans 15:13 - May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope.",
+    "Philippians 4:4 - Rejoice in the Lord always. I will say it again: Rejoice!"
+    
     
 );
 $verse = $verses[date('z') % count($verses)]; // Use the day of the year to select a verse

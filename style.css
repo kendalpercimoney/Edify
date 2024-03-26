@@ -34,9 +34,10 @@ html {
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
   margin: 0px;
-  background-color: rgba(0, 0, 0, 0.6); /* Keep the black block at 0.6 opacity */
+  background-color: rgba(0, 0, 0, 0.3); /* Keep the black block at 0.6 opacity */
   border: 30px solid rgba(0, 0, 0, 0); /* Set the border color to fully opaque black */
   border-radius: 25px;
+  backdrop-filter: blur(20px); 
 }
 
 .hero-text h1,

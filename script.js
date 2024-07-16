@@ -46,6 +46,37 @@ function askForName() {
     document.getElementById("name").innerHTML = userName;
 }
 
+function addBookmark() {
+    const name = document.getElementById('bookmark-name').value;
+    const url = document.getElementById('bookmark-url').value;
+    
+    if (name && url) {
+      const faviconUrl = `https://www.google.com/s2/favicons?domain=${url}`;
+      const bookmarksList = document.getElementById('bookmarks-list');
+  
+      const bookmarkItem = document.createElement('div');
+      bookmarkItem.classList.add('bookmark-item');
+      bookmarkItem.innerHTML = `
+        <img src="${faviconUrl}" alt="${name} Icon">
+        <a href="${url}" target="_blank">${name}</a>
+        <button onclick="removeBookmark(this)">Delete</button>
+      `;
+  
+      bookmarksList.appendChild(bookmarkItem);
+  
+      // Clear input fields
+      document.getElementById('bookmark-name').value = '';
+      document.getElementById('bookmark-url').value = '';
+    } else {
+      alert('Please enter both a name and a URL.');
+    }
+  }
+  
+  function removeBookmark(button) {
+    const bookmarkItem = button.parentNode;
+    bookmarkItem.remove();
+  }
+
 document.querySelector('#content-container').style.display = "block";
 document.querySelector('#content-container').classList.add('fade-in');
 

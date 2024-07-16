@@ -14,10 +14,10 @@
 
       <div class="hero-text">
         
-        <h1 style="font-size:50px">Hello, <span id="name"></span></h1>
+        <h1 style="font-size:45px">Hello, <span id="name"></span></h1>
         <span id="name"></span>
         <div class="quote-text">
-        <h2 style="font-size:25px;"></h2>
+        <h2 style="font-size:22px;"></h2>
         </div>
       </div>
     </div>
@@ -36,7 +36,13 @@
     </div>
 
           -->
-
+          <div id="bookmark-container">
+            <h3>Bookmarks</h3>
+            <input type="text" id="bookmark-name" placeholder="Enter website name">
+            <input type="text" id="bookmark-url" placeholder="Enter website URL">
+            <button onclick="addBookmark()">Add Bookmark</button>
+            <div id="bookmarks-list"></div>
+          </div>
   </div>
 
 <script src="script.js"></script>

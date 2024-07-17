@@ -37,6 +37,7 @@ window.onload = function() {
     }
 }
 
+
 function askForName() {
     // Ask the user for their name
     var userName = prompt("Hi there, thanks for downloading! To get started, please enter your name:");

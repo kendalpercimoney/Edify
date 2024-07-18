@@ -62,6 +62,7 @@ function addBookmark() {
         <a href="${url}" target="_blank">${name}</a>
         <button onclick="removeBookmark(this)">Delete</button>
       `;
+      
   
       bookmarksList.appendChild(bookmarkItem);
   

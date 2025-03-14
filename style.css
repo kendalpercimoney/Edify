@@ -36,7 +36,7 @@ html {
   background-color: rgba(0, 0, 0, 0.3); /* Keep the black block at 0.3 opacity */
   border: 30px solid rgba(0, 0, 0, 0); /* Set the border color to fully opaque black */
   border-radius: 25px;
-  backdrop-filter: blur(15px); 
+  backdrop-filter: blur(20px); 
 }
 
 .hero-text::before {

@@ -26,24 +26,24 @@ fetch('https://firstiimpression.com/Edify/edifyAPI.php')
 
 
 window.onload = function() {
-    // Check if the user's name is already saved in local storage
-    var userName = localStorage.getItem("userName");
-    if (userName) {
-        // Replace "kendal" with the user's name
-        document.getElementById("name").innerHTML = userName;
-    } else {
-        // If the user's name is not saved, ask for it
-        askForName();
-    }
+  // Check if the user's name is already saved in local storage
+  var userName = localStorage.getItem("userName");
+  if (userName && userName.trim() !== "" && userName !== "null") {
+      // Replace "user" with the user's name
+      document.getElementById("name").innerHTML = userName;
+  } else {
+      // If the user's name is not saved, ask for it
+      askForName();
+  }
 }
 
 
 function askForName() {
     // Ask the user for their name
-    var userName = prompt("Hi there, thanks for downloading! To get started, please enter your name:");
+    var userName = prompt("Thanks for downloading, stay blessed. To get started, please enter your name:");
     // Save the user's name to local storage
     localStorage.setItem("userName", userName);
-    // Replace "kendal" with the user's name
+    // Replace "user" with the user's name
     document.getElementById("name").innerHTML = userName;
 }
 

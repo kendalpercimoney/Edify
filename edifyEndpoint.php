@@ -1,7 +1,7 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 
-// Set the timezone to your local timezone
+// Set the timezone
 date_default_timezone_set('Europe/London');
 
 // Generate the URL for the image

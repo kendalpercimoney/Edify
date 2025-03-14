@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Edify - Daily Bible Verse",
-  "version": "1.2.1",
-  "description": "A beautiful new-tab extension.",
+  "version": "1.2.3",
+  "description": "Add more scripture to your daily life.",
   "author": "Kendal Percimoney",
   "chrome_url_overrides" : {
     "newtab": "index.html"

@@ -40,7 +40,7 @@ window.onload = function() {
 
 function askForName() {
     // Ask the user for their name
-    var userName = prompt("Thanks for downloading, stay blessed. To get started, please enter your name:");
+    var userName = prompt("---------------------- \nKendal here, thanks for downloading - stay blessed! \n \nTo get started, please enter your name:");
     // Save the user's name to local storage
     localStorage.setItem("userName", userName);
     // Replace "user" with the user's name
@@ -81,4 +81,43 @@ function addBookmark() {
 
 document.querySelector('#content-container').style.display = "block";
 document.querySelector('#content-container').classList.add('fade-in');
+
+// Info Button Functionality
+const infoButton = document.getElementById('infoButton');
+const infoMenu = document.getElementById('infoMenu');
+const changeNameItem = document.getElementById('changeNameItem');
+
+// Toggle menu on button click
+infoButton.addEventListener('click', function(e) {
+  e.stopPropagation();
+  infoMenu.classList.toggle('active');
+});
+
+// Change Name functionality
+changeNameItem.addEventListener('click', function(e) {
+  e.preventDefault();
+  const newName = prompt('We already have a new identity in Christ (2 Cor. 5:17)! \n\nBut you have free will to change your name to:');
+  if (newName && newName.trim() !== '') {
+    localStorage.setItem('userName', newName);
+    document.getElementById('name').innerHTML = newName;
+    infoMenu.classList.remove('active');
+  }
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', function(e) {
+  if (!infoButton.contains(e.target) && !infoMenu.contains(e.target)) {
+    infoMenu.classList.remove('active');
+  }
+});
+
+// Close menu when clicking a menu item (except external links)
+infoMenu.querySelectorAll('.menu-item').forEach(item => {
+  item.addEventListener('click', function(e) {
+    // Only close for mailto links, let target="_blank" links open new tabs
+    if (this.href.startsWith('mailto:')) {
+      infoMenu.classList.remove('active');
+    }
+  });
+});
 

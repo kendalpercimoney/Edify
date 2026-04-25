@@ -1,6 +1,7 @@
 <html>
 
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 
@@ -22,29 +23,34 @@
       </div>
     </div>
 
-    <!-- For the bookmarks
-    
-
-         
-          <div id="bookmark-container">
-            <h3>Bookmarks</h3>
-            <input type="text" id="bookmark-name" placeholder="Enter website name">
-            <input type="text" id="bookmark-url" placeholder="Enter website URL">
-            <button onclick="addBookmark()">Add Bookmark</button>
-            <div id="bookmarks-list"></div>
-          </div>
-  </div>
-   -->
-
     <!-- Info Button -->
     <div class="info-button" id="infoButton" title="Info">
-      <span>&#x2139;</span>
+      <span style="opacity: 0.5;"> </span>
     </div>
     <div class="info-menu" id="infoMenu">
       <a href="mailto:kendal@menuagency.ie" class="menu-item">&#x1F48C; Feedback + Feature Requests</a>
       <a href="https://firstiimpression.com/Edify/tutorial.jpg" target="_blank" class="menu-item">&#x2B07; Remove the Bottom Bar</a>
       <a id="changeNameItem" class="menu-item">&#x270D; Change Name</a>
       <a href="https://www.buymeacoffee.com/kenpercimoney" target="_blank" class="menu-item">&#128153; Support</a>
+      <div style="padding: 12px 20px; font-size: 12px; color: rgba(255, 255, 255, 0.6); border-top: 1px solid rgba(255, 255, 255, 0.1);">
+        <a href="https://chromewebstore.google.com/detail/edify-daily-bible-verse/nblhgonamimmbjolllcjajanagfemlpf" target="_blank" style="color: rgba(255, 255, 255, 0.6); text-decoration: none;">Edify - Daily Bible Verse</a>
+      </div>
+    </div>
+
+    <!-- Bookmarks Button -->
+    <div class="bookmarks-button" id="bookmarksButton" title="Bookmarks">
+      <span style="opacity: 0.5;"> </span>
+    </div>
+    <div class="bookmarks-menu" id="bookmarksMenu">
+      <div id="bookmarksList"></div>
+      <div style="padding: 12px 20px; font-size: 12px; color: rgba(255, 255, 255, 0.6); border-top: 1px solid rgba(255, 255, 255, 0.1);">
+        <div class="bookmark-menu-item" id="addBookmarkItem" style="color: rgba(255, 255, 255, 0.6); text-decoration: none; padding: 0; margin-bottom: 8px;">
+          <span>&#x2795;</span> Add Bookmark
+        </div>
+        <div class="bookmark-menu-item" id="deleteBookmarkItem" style="color: rgba(255, 255, 255, 0.6); text-decoration: none; padding: 0;">
+          <span>&#x1F5D1;</span> Delete Bookmark
+        </div>
+      </div>
     </div>
 
 <script src="script.js"></script>

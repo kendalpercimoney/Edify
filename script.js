@@ -47,38 +47,6 @@ function askForName() {
     document.getElementById("name").innerHTML = userName;
 }
 
-function addBookmark() {
-    const name = document.getElementById('bookmark-name').value;
-    const url = document.getElementById('bookmark-url').value;
-    
-    if (name && url) {
-      const faviconUrl = `https://www.google.com/s2/favicons?domain=${url}`;
-      const bookmarksList = document.getElementById('bookmarks-list');
-  
-      const bookmarkItem = document.createElement('div');
-      bookmarkItem.classList.add('bookmark-item');
-      bookmarkItem.innerHTML = `
-        <img src="${faviconUrl}" alt="${name} Icon">
-        <a href="${url}" target="_blank">${name}</a>
-        <button onclick="removeBookmark(this)">Delete</button>
-      `;
-      
-  
-      bookmarksList.appendChild(bookmarkItem);
-  
-      // Clear input fields
-      document.getElementById('bookmark-name').value = '';
-      document.getElementById('bookmark-url').value = '';
-    } else {
-      alert('Please enter both a name and a URL.');
-    }
-  }
-  
-  function removeBookmark(button) {
-    const bookmarkItem = button.parentNode;
-    bookmarkItem.remove();
-  }
-
 document.querySelector('#content-container').style.display = "block";
 document.querySelector('#content-container').classList.add('fade-in');
 
@@ -120,4 +88,168 @@ infoMenu.querySelectorAll('.menu-item').forEach(item => {
     }
   });
 });
+
+/* ---------Bookmarks Functionality------------- */
+
+let deleteMode = false;
+
+// Get favicon for a URL
+function getFaviconUrl(urlString) {
+  try {
+    const url = new URL(urlString);
+    return `https://www.google.com/s2/favicons?sz=16&domain=${url.hostname}`;
+  } catch (e) {
+    return null;
+  }
+}
+
+// Initialize bookmarks
+function initializeBookmarks() {
+  const bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+  renderBookmarks(bookmarks);
+}
+
+// Render bookmarks
+function renderBookmarks(bookmarks) {
+  const bookmarksList = document.getElementById('bookmarksList');
+  bookmarksList.innerHTML = '';
+  
+  bookmarks.forEach((bookmark, index) => {
+    const bookmarkItem = document.createElement('div');
+    bookmarkItem.className = 'bookmark-item';
+    bookmarkItem.draggable = deleteMode;
+    bookmarkItem.dataset.index = index;
+    
+    const faviconUrl = getFaviconUrl(bookmark.url);
+    const favicon = faviconUrl ? `<img src="${faviconUrl}" alt="favicon" class="clickable-favicon" data-index="${index}">` : '<span class="clickable-favicon" data-index="${index}">🔗</span>';
+    
+    bookmarkItem.innerHTML = `
+      <button class="drag-handle ${deleteMode ? 'visible' : ''}" data-index="${index}">☰</button>
+      ${favicon}
+      <span class="bookmark-text" title="${bookmark.title}">${bookmark.title}</span>
+      <button class="remove-bookmark ${deleteMode ? 'visible' : ''}" data-index="${index}">✕</button>
+    `;
+    
+    // Click to open bookmark (favicon and text)
+    const openBookmark = function() {
+      if (!deleteMode) {
+        window.open(bookmark.url, '_blank');
+        bookmarksMenu.classList.remove('active');
+      }
+    };
+    
+    bookmarkItem.addEventListener('click', openBookmark);
+    
+    // Drag and drop functionality
+    bookmarkItem.addEventListener('dragstart', function(e) {
+      e.dataTransfer.effectAllowed = 'move';
+      bookmarkItem.classList.add('dragging');
+    });
+    
+    bookmarkItem.addEventListener('dragend', function(e) {
+      bookmarkItem.classList.remove('dragging');
+    });
+    
+    bookmarkItem.addEventListener('dragover', function(e) {
+      e.preventDefault();
+      e.dataTransfer.dropEffect = 'move';
+      bookmarkItem.classList.add('drag-over');
+    });
+    
+    bookmarkItem.addEventListener('dragleave', function(e) {
+      bookmarkItem.classList.remove('drag-over');
+    });
+    
+    bookmarkItem.addEventListener('drop', function(e) {
+      e.preventDefault();
+      bookmarkItem.classList.remove('drag-over');
+      
+      const draggedItem = document.querySelector('.bookmark-item.dragging');
+      if (draggedItem && draggedItem !== bookmarkItem) {
+        const draggedIndex = parseInt(draggedItem.dataset.index);
+        const targetIndex = index;
+        
+        // Swap the bookmarks
+        [bookmarks[draggedIndex], bookmarks[targetIndex]] = [bookmarks[targetIndex], bookmarks[draggedIndex]];
+        localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+        renderBookmarks(bookmarks);
+      }
+    });
+    
+    // Remove bookmark
+    bookmarkItem.querySelector('.remove-bookmark').addEventListener('click', function(e) {
+      e.stopPropagation();
+      const newBookmarks = bookmarks.filter((_, i) => i !== index);
+      localStorage.setItem('bookmarks', JSON.stringify(newBookmarks));
+      renderBookmarks(newBookmarks);
+    });
+    
+    bookmarksList.appendChild(bookmarkItem);
+  });
+}
+
+// Bookmarks Button Functionality
+const bookmarksButton = document.getElementById('bookmarksButton');
+const bookmarksMenu = document.getElementById('bookmarksMenu');
+const addBookmarkItem = document.getElementById('addBookmarkItem');
+const deleteBookmarkItem = document.getElementById('deleteBookmarkItem');
+
+// Toggle menu on button click
+bookmarksButton.addEventListener('click', function(e) {
+  e.stopPropagation();
+  bookmarksMenu.classList.toggle('active');
+});
+
+// Add bookmark functionality
+addBookmarkItem.addEventListener('click', function(e) {
+  e.stopPropagation();
+  let url = prompt('Enter the URL to bookmark:');
+  if (url && url.trim() !== '') {
+    try {
+      // Add https:// if no protocol is provided
+      if (!url.startsWith('http://') && !url.startsWith('https://')) {
+        url = 'https://' + url;
+      }
+      new URL(url);
+      const bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+      
+      // Try to get the title from the user, otherwise use the URL
+      const title = prompt('Enter a name for this bookmark:') || url;
+      
+      bookmarks.push({ url, title });
+      localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+      renderBookmarks(bookmarks);
+    } catch (e) {
+      alert('Please enter a valid URL');
+    }
+  }
+});
+
+// Delete bookmark toggle functionality
+deleteBookmarkItem.addEventListener('click', function(e) {
+  e.stopPropagation();
+  deleteMode = !deleteMode;
+  deleteBookmarkItem.style.backgroundColor = deleteMode ? 'rgba(255, 100, 100, 0.3)' : 'transparent';
+  
+  // Update draggable and refresh bookmarks
+  const bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+  document.querySelectorAll('.bookmark-item').forEach(item => {
+    item.draggable = deleteMode;
+  });
+  renderBookmarks(bookmarks);
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', function(e) {
+  if (!bookmarksButton.contains(e.target) && !bookmarksMenu.contains(e.target)) {
+    bookmarksMenu.classList.remove('active');
+    deleteMode = false;
+    deleteBookmarkItem.style.backgroundColor = 'transparent';
+    const bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+    renderBookmarks(bookmarks);
+  }
+});
+
+// Initialize bookmarks on page load
+window.addEventListener('DOMContentLoaded', initializeBookmarks);
 
